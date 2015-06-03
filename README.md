@@ -1,5 +1,5 @@
 # Akka Intro Slides
 
-Slide deck for the meetup talk *Akka Introduction*
+Slide deck for talk *Akka Introduction (Hands-On)
 
-View it on [http://markusjura.github.io/akka-intro-slides](http://markusjura.github.io/akka-intro-slides)
+View it on [markusjura.github.io/akka-intro-hands-on-slides](http://markusjura.github.io/akka-intro-hands-on-slides)
