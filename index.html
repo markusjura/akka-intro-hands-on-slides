@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Introducing Akka</title>
+
+    <meta name="description" content="Akka is a toolkit and runtime for building highly concurrent, distributed, and fault tolerant event-driven applications on the JVM.">
+    <meta name="author" content="Markus Jura">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/custom.css" id="theme">
+    <link rel="stylesheet" href="lib/css/idea.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides">
+
+<!-- ########################################################################################### -->
+<!-- BEGIN
+<!-- ########################################################################################### -->
+
+<section id="content" data-markdown data-background="#103a51"><script type="text/template">
+## Introducing Akka
+
+### Markus Jura
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section>
+<h2>About me</h2>
+
+<ul>
+    <li>Consultant <a href="http://typesafe.com">@Typesafe</a></li>
+    <li>Living in Hamburg</li>
+    <li>4 years Scala, 10 years Java background</li>
+</ul>    
+<div>
+    <a href="https://twitter.com/markusjura" class="twitter-follow-button" data-show-count="true">Follow @markusjura</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <iframe src="http://ghbtns.com/github-btn.html?user=markusjura&type=follow&count=false"
+    allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+</div>  
+</section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+## What is Akka?
+
+<blockquote>Akka is a toolkit and runtime for building highly concurrent, distributed, and fault tolerant event-driven applications on the JVM.</blockquote>
+<small>[akka.io](http://akka.io)</small>
+
+![Jax Innovation Award](assets/akka-jax-award.png "Akka JAX Award")
+</script></section>
+
+<!-- ########################################################################################### -->
+<section data-markdown><script type="text/template">
+##Reactive Manifesto
+
+![Reactive](images/reactive.png "reactive")
+
+<small class="footnote">[reactivemanifesto.org](http://www.reactivemanifesto.org/)</small>
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+## Demo
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+## This was
+
+## Akka
+<br/><br/>
+## Well.. it&#39;s a start..
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+## We have much more
+
+![Akka More](assets/akka-more.png "Akka More")
+</script></section>
+
+<!-- ########################################################################################### -->
+
+<section>
+<h2>Get It and Learn More</h2>
+<ul>
+    <li><a href="http://akka.io">akka.io</a></li>
+    <li><a href="http://letitcrash.com">letitcrash.com</a></li>
+    <li><a href="https://typesafe.com/activator/templates">Akka Tutorials</a></li>
+    <li>
+        <a href="https://twitter.com/akkateam" class="twitter-follow-button" data-show-count="true">Follow @akkateam</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </li>
+</ul>
+</section>
+
+<!-- ########################################################################################### -->
+
+<section data-markdown><script type="text/template">
+## Q & Option[A]
+</script></section>
+
+</section> 
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script src="js/modes.js" type="text/javascript"></script>
+
+<script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
